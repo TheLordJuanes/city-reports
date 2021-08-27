@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lord Juanes\\.nuget\\packages\\": {}
+    "C:\\Users\\juanp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lord Juanes\\Documents\\Taller2\\Taller2.csproj",
+      "projectUniqueName": "C:\\Users\\juanp\\Desktop\\city-reports\\city-reports\\Taller2.csproj",
       "projectName": "Taller2",
-      "projectPath": "C:\\Users\\Lord Juanes\\Documents\\Taller2\\Taller2.csproj",
-      "packagesPath": "C:\\Users\\Lord Juanes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lord Juanes\\Documents\\Taller2\\obj\\",
+      "projectPath": "C:\\Users\\juanp\\Desktop\\city-reports\\city-reports\\Taller2.csproj",
+      "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanp\\Desktop\\city-reports\\city-reports\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lord Juanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
