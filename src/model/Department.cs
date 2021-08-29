@@ -39,5 +39,9 @@ namespace Taller2.model {
         public int getCode() {
             return Code;
         }
+
+        public List<Municipality> getMunicipalities() {
+            return municipalities;
+        }
     }
 }

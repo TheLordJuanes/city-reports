@@ -25,3 +25,28 @@ C:\Users\juanp\Desktop\city-reports\city-reports\obj\Debug\net5.0-windows\Taller
 C:\Users\juanp\Desktop\city-reports\city-reports\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\juanp\Desktop\city-reports\city-reports\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\juanp\Desktop\city-reports\city-reports\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.exe
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.deps.json
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.runtimeconfig.json
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.runtimeconfig.dev.json
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.dll
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\ref\Taller2.dll
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\Taller2.pdb
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\LiveCharts.dll
+C:\Users\Lord Juanes\Documents\city-reports\bin\Debug\net5.0-windows\LiveCharts.Wpf.dll
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.csproj.AssemblyReference.cache
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2_MarkupCompile.cache
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2_MarkupCompile.lref
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.g.resources
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.AssemblyInfoInputs.cache
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.AssemblyInfo.cs
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.csproj.CoreCompileInputs.cache
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.csproj.CopyComplete
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.dll
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\ref\Taller2.dll
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.pdb
+C:\Users\Lord Juanes\Documents\city-reports\obj\Debug\net5.0-windows\Taller2.genruntimeconfig.cache

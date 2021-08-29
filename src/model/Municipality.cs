@@ -18,13 +18,6 @@ namespace Taller2.model {
         private string Type;
 
         // -----------------------------------------------------------------
-        // Relations
-        // -----------------------------------------------------------------
-
-        private List<Municipality> municipalities;
-        private List<Department> departments;
-
-        // -----------------------------------------------------------------
         // Methods
         // -----------------------------------------------------------------
 
@@ -32,8 +25,6 @@ namespace Taller2.model {
             this.Name = Name;
             this.Code = Code;
             this.Type = Type;
-            municipalities = new List<Municipality>();
-            departments = new List<Department>();
         }
 
         public string getName() {

@@ -1,5 +1,6 @@
 ﻿<Window x:Class="Taller2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -21,6 +22,8 @@
         <Label Grid.Column="1">Código Dane del municipio</Label>
         <ListBox Grid.Column="1" x:Name="lstNames" Height="25" Margin="10,28,10,361"/>
         <Button x:Name="btnBuscar" Grid.Column="1" HorizontalAlignment="Left" Height="25" Width="70" Margin="180,58,0,331" Content="Buscar"/>
-
+        <Label Content="Label" Grid.Column="2" HorizontalAlignment="Left" Margin="582,71,0,0" VerticalAlignment="Top"/>
+        <lvc:PieChart x:Name="pieChart" LegendLocation="Bottom" Hoverable="True" InnerRadius="0" Margin="39,10,38,51" Grid.Column="2"></lvc:PieChart>
+        <Label Content="Cantidad de municipios por departmento" Grid.Column="2" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="30" Width="240"/>
     </Grid>
 </Window>

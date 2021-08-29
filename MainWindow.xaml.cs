@@ -23,6 +23,8 @@ using System.Windows.Shapes;
 using System.Data.OleDb;
 using Microsoft.VisualBasic.FileIO;
 using Taller2.model;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace Taller2 {
     /// <summary>
@@ -54,7 +56,17 @@ namespace Taller2 {
                 DataTable dt = dane.ImportCVSFile(ofd.FileName);
                 dataGrid.ItemsSource = dt.DefaultView;
                 dataGrid.GridLinesVisibility = DataGridGridLinesVisibility.All;
+                generatePieChart();
             }
+        }
+
+        Func<ChartPoint, string> labelPoint = chartpoint => string.Format("{0} ({1:P)", chartpoint.Y, chartpoint.Participation);
+        private void generatePieChart() {
+            SeriesCollection series = new SeriesCollection();
+            foreach (Department dep in dane.getDepartments()) {
+                series.Add(new PieSeries() { Title = dep.getName(), Values = new ChartValues<int> { dep.getMunicipalities().Count }, DataLabels = true, LabelPoint = labelPoint });
+            }
+            pieChart.Series = series;
         }
     }
 }

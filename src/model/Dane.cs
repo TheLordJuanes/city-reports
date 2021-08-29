@@ -23,10 +23,21 @@ namespace Taller2.model {
         public static string SEPARATOR = ",";
 
         // -----------------------------------------------------------------
+        // Relations
+        // -----------------------------------------------------------------
+
+        private List<Department> departments;
+        private List<Municipality> municipalities;
+
+        // -----------------------------------------------------------------
         // Methods
         // -----------------------------------------------------------------
 
         public Dane() {
+        }
+
+        public List<Department> getDepartments() {
+            return departments;
         }
 
         public DataTable ImportCVSFile(string csv_file_path) {
