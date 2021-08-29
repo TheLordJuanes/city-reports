@@ -6,11 +6,21 @@
         xmlns:local="clr-namespace:Taller2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,-36,-6">
-        <DataGrid x:Name="dataGrid"  Margin="16,10,418,63">
+    <Grid Margin="10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid"  Margin="10,10,10,0" Grid.Column="0" Height="326" VerticalAlignment="Top">
 
         </DataGrid>
-        <Button x:Name="btnImportar" Height="50" Content="Importar datos" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="btnImportar_Click" Margin="187,0,0,8"/>
+        <Button x:Name="btnImportar" Content="Importar datos" HorizontalAlignment="Center" Click="btnImportar_Click" Margin="0,0,0,10" Height="50" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Column="1">Código Dane del municipio</Label>
+        <ListBox Grid.Column="1" x:Name="lstNames" Height="25" Margin="10,28,10,361"/>
+        <Button x:Name="btnBuscar" Grid.Column="1" HorizontalAlignment="Left" Height="25" Width="70" Margin="180,58,0,331" Content="Buscar"/>
 
     </Grid>
 </Window>
