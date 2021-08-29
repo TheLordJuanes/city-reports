@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SkY8VDwwo+ZjGX2fiSdcZZs+d9KTG6b6dsb3xqywRDnfMKY8Pkqr0zmpsMLL4Y1QlYs/lhTKrYQ5kCZzIkqy5Q==",
+  "dgSpecHash": "XRwWojaWiAJKvQqFIxf+mh1H55ir1qUtm7by4CnNBGV1HJcqhgLQ9oZP+gr0iMW61is8q4o/nQ60srfGzO5avA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\Taller2.csproj",
+  "projectFilePath": "C:\\Users\\Lord Juanes\\Documents\\city-reports\\Taller2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\juanp\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\juanp\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+    "C:\\Users\\Lord Juanes\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Lord Juanes\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
   ],
   "logs": [
     {

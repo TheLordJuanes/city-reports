@@ -8,14 +8,15 @@ using System.Linq;
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 namespace Taller2.model {
+
     public class Department {
 
         // -----------------------------------------------------------------
         // Attributes
         // -----------------------------------------------------------------
 
-        private string Name;
-        private string Code;
+        private string name;
+        private string code;
 
         // -----------------------------------------------------------------
         // Relations
@@ -27,43 +28,35 @@ namespace Taller2.model {
         // Methods
         // -----------------------------------------------------------------
 
-        public Department(string Name, string Code) {
-            this.Name = Name;
-            this.Code = Code;
+        public Department(string name, string code) {
+            this.name = name;
+            this.code = code;
             municipalities = new List<Municipality>();
         }
 
-        public void addMun(Municipality mun)
-        {
-            if (!existMun(mun.getCode()))
-                municipalities.Add(mun);
-        }
-
-        private bool existMun(string id)
-        {
-            if (id.Equals(""))
-            {
-            }
-            for (int i = 0; i < municipalities.Count; i++)
-            {
-                if (id.Equals(municipalities.ElementAt(i).getCode()))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         public string getName() {
-            return Name;
+            return name;
         }
 
         public string getCode() {
-            return Code;
+            return code;
         }
 
         public List<Municipality> getMunicipalities() {
             return municipalities;
+        }
+
+        public void addMunicipality(Municipality mun) {
+            if (!existMunicipality(mun.getCode()))
+                municipalities.Add(mun);
+        }
+
+        private bool existMunicipality(string id) {
+            for (int i = 0; i < municipalities.Count; i++) {
+                if (id.Equals(municipalities.ElementAt(i).getCode()))
+                    return true;
+            }
+            return false;
         }
     }
 }

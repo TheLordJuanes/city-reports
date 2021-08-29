@@ -1,5 +1,4 @@
 ﻿
-using System.Collections.Generic;
 /**
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * @Authors: Juan Pablo Ramos and Juan Esteban Caicedo
@@ -7,15 +6,16 @@ using System.Collections.Generic;
 * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 namespace Taller2.model {
+
     public class Municipality {
 
         // -----------------------------------------------------------------
         // Attributes
         // -----------------------------------------------------------------
 
-        private string Name;
-        private string Code;
-        private string Type;
+        private string name;
+        private string code;
+        private string type;
         private string departmentName;
         private string departmentCode;
 
@@ -23,31 +23,30 @@ namespace Taller2.model {
         // Methods
         // -----------------------------------------------------------------
 
-        public Municipality(string Name, string Code, string Type, string departmentName, string departmentCode) {
-            this.Name = Name;
-            this.Code = Code;
-            this.Type = Type;
+        public Municipality(string name, string code, string type, string departmentName, string departmentCode) {
+            this.name = name;
+            this.code = code;
+            this.type = type;
             this.departmentName = departmentName;
             this.departmentCode = departmentCode;
         }
 
         public string getName() {
-            return Name;
+            return name;
         }
 
         public string getCode() {
-            return Code;
+            return code;
         }
 
         public string getType() {
-            return Type;
+            return type;
         }
 
-        public override string ToString()
-        {
-            string temp = "Name: " + Name + "\n" +
-                "Code: " + Code + "\n" +
-                "Type: " + Type + "\n" +
+        public override string ToString() {
+            string temp = "Name: " + name + "\n" +
+                "Code: " + code + "\n" +
+                "Type: " + type + "\n" +
                 "Department: " + departmentName + "\n" +
                 "Department code: " + departmentCode;
             return temp;
