@@ -25,6 +25,7 @@ using Microsoft.VisualBasic.FileIO;
 using Taller2.model;
 using LiveCharts;
 using LiveCharts.Wpf;
+using LiveCharts.Defaults;
 
 namespace Taller2 {
     /// <summary>
@@ -48,6 +49,8 @@ namespace Taller2 {
             dane = new Dane();
         }
 
+        public SeriesCollection SeriesCollection { get; set; }
+
         private void btnImportar_Click(object sender, RoutedEventArgs e) {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "CSV Files | *.csv;";
@@ -60,13 +63,20 @@ namespace Taller2 {
             }
         }
 
-        Func<ChartPoint, string> labelPoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
         private void generatePieChart() {
             SeriesCollection series = new SeriesCollection();
-            foreach (Department dep in dane.getDepartments()) {
-                series.Add(new PieSeries() { Title = dep.getName(), Values = new ChartValues<int> { dep.getMunicipalities().Count }, DataLabels = true, LabelPoint = labelPoint });
+            foreach (Department dep in dane.getDepartments())
+            {
+                series.Add(new PieSeries()
+                {
+                    Title = dep.getName(),
+                    Values = new ChartValues<int> { dep.getMunicipalities().Count },
+                    DataLabels = true,
+                    
+                });
             }
             pieChart.Series = series;
+            
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)

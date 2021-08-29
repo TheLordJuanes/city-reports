@@ -26,7 +26,7 @@
             <TextBox x:Name="tbInfo" Grid.Column="1" IsReadOnly="True" Height="339" ></TextBox>
         </StackPanel>
 
-        <lvc:PieChart x:Name="pieChart" LegendLocation="Bottom" Hoverable="True" InnerRadius="0" Margin="39,10,38,51" Grid.Column="2"></lvc:PieChart>
+        <lvc:PieChart x:Name="pieChart" LegendLocation="Bottom" Series="{Binding SeriesCollection}" Hoverable="True" InnerRadius="0" Margin="10" Grid.Column="2"></lvc:PieChart>
         <Label Content="Cantidad de municipios por departmento" Grid.Column="2" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="30" Width="240"/>
     </Grid>
 </Window>

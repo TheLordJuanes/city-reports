@@ -68,25 +68,30 @@ namespace Taller2.model
                     Department depTemp = new Department(fieldData[2], fieldData[0]);
                     Municipality munTemp = new Municipality(fieldData[3], fieldData[1], fieldData[4], fieldData[2], fieldData[0]);
                     municipalities.Add(munTemp);
-                    if (!exist(fieldData[0]))
+                    Department temp = exist(fieldData[0]);
+                    if (temp == null)
                     {
                         departments.Add(depTemp);
+                        departments.ElementAt(departments.Count-1).addMun(munTemp);
+                    }
+                    else {
+                        temp.addMun(munTemp);
                     }
                 }
                 return csvData;
             }
         }
 
-        public bool exist(string depCode)
+        public Department exist(string depCode)
         {
             for (int i = 0; i < departments.Count; i++)
             {
                 if (depCode.Equals(departments.ElementAt(i).getCode()))
                 {
-                    return true;
+                    return departments.ElementAt(i);
                 }
             }
-            return false;
+            return null;
         }
 
         public string SearchMunicipalities(string id)
