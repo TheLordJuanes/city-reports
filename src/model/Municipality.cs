@@ -1,8 +1,10 @@
-﻿/**
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * @Authors: Juan Pablo Ramos and Juan Esteban Caicedo
- * @Date: August, 30th 2021
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+﻿
+using System.Collections.Generic;
+/**
+* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* @Authors: Juan Pablo Ramos and Juan Esteban Caicedo
+* @Date: August, 30th 2021
+* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 namespace Taller2.model {
     public class Municipality {
@@ -16,6 +18,13 @@ namespace Taller2.model {
         private string Type;
 
         // -----------------------------------------------------------------
+        // Relations
+        // -----------------------------------------------------------------
+
+        private List<Municipality> municipalities;
+        private List<Department> departments;
+
+        // -----------------------------------------------------------------
         // Methods
         // -----------------------------------------------------------------
 
@@ -23,18 +32,20 @@ namespace Taller2.model {
             this.Name = Name;
             this.Code = Code;
             this.Type = Type;
+            municipalities = new List<Municipality>();
+            departments = new List<Department>();
         }
 
-        public string GetName() {
+        public string getName() {
             return Name;
         }
 
-        public int GetCode() {
+        public int getCode() {
             return Code;
         }
 
-        public string GetType() {
-            return Name;
+        public string getType() {
+            return Type;
         }
     }
 }
