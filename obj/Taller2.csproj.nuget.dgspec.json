@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lord Juanes\\Documents\\city-reports\\Taller2.csproj": {}
+    "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\Taller2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lord Juanes\\Documents\\city-reports\\Taller2.csproj": {
+    "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\Taller2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lord Juanes\\Documents\\city-reports\\Taller2.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\Taller2.csproj",
         "projectName": "Taller2",
-        "projectPath": "C:\\Users\\Lord Juanes\\Documents\\city-reports\\Taller2.csproj",
-        "packagesPath": "C:\\Users\\Lord Juanes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lord Juanes\\Documents\\city-reports\\obj\\",
+        "projectPath": "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\Taller2.csproj",
+        "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juanp\\Desktop\\taller\\city-reports\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lord Juanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

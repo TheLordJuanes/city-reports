@@ -9,12 +9,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Taller2.model {
+namespace Taller2.model
+{
 
-    public class Dane {
+    public class Dane
+    {
 
         // -----------------------------------------------------------------
         // Constants
@@ -26,40 +26,80 @@ namespace Taller2.model {
         // Relations
         // -----------------------------------------------------------------
 
-        private List<Department> departments;
         private List<Municipality> municipalities;
+        private List<Department> departments;
 
         // -----------------------------------------------------------------
         // Methods
         // -----------------------------------------------------------------
 
-        public Dane() {
+        public Dane()
+        {
+            municipalities = new List<Municipality>();
+            departments = new List<Department>();
         }
 
-        public List<Department> getDepartments() {
+        public List<Department> getDepartments()
+        {
             return departments;
         }
 
-        public DataTable ImportCVSFile(string csv_file_path) {
+        public DataTable ImportCVSFile(string csv_file_path)
+        {
             DataTable csvData = new DataTable();
-            using (StreamReader csvReader = new StreamReader(csv_file_path)) {
+            using (StreamReader csvReader = new StreamReader(csv_file_path))
+            {
                 string[] colFields = csvReader.ReadLine().Split(SEPARATOR);
-                foreach (string column in colFields) {
-                    DataColumn datecolumn = new DataColumn(column);
-                    datecolumn.AllowDBNull = true;
-                    csvData.Columns.Add(datecolumn);
+                foreach (string column in colFields)
+                {
+                    DataColumn dataColumn = new DataColumn(column);
+                    dataColumn.AllowDBNull = true;
+                    csvData.Columns.Add(dataColumn);
                 }
-                while (!csvReader.EndOfStream) {
+                while (!csvReader.EndOfStream)
+                {
                     string[] fieldData = csvReader.ReadLine().Split(SEPARATOR);
-                    for (int i = 0; i < fieldData.Length; i++) {
-                        if (fieldData[i] == "") {
+                    for (int i = 0; i < fieldData.Length; i++)
+                    {
+                        if (fieldData[i] == "")
                             fieldData[i] = null;
-                        }
-                        csvData.Rows.Add(fieldData);
+                    }
+                    csvData.Rows.Add(fieldData);
+                    Department depTemp = new Department(fieldData[2], fieldData[0]);
+                    Municipality munTemp = new Municipality(fieldData[3], fieldData[1], fieldData[4], fieldData[2], fieldData[0]);
+                    municipalities.Add(munTemp);
+                    if (!exist(fieldData[0]))
+                    {
+                        departments.Add(depTemp);
                     }
                 }
                 return csvData;
             }
+        }
+
+        public bool exist(string depCode)
+        {
+            for (int i = 0; i < departments.Count; i++)
+            {
+                if (depCode.Equals(departments.ElementAt(i).getCode()))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public string SearchMunicipalities(string id)
+        {
+            string temp = "El municipio no fue encontrado";
+            for (int i = 0; i < municipalities.Count; i++)
+            {
+                if (municipalities.ElementAt(i).getCode().Equals(id))
+                {
+                    temp = municipalities.ElementAt(i).ToString();
+                }
+            }
+            return temp;
         }
     }
 }

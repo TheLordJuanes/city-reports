@@ -14,29 +14,43 @@ namespace Taller2.model {
         // -----------------------------------------------------------------
 
         private string Name;
-        private int Code;
+        private string Code;
         private string Type;
+        private string departmentName;
+        private string departmentCode;
 
         // -----------------------------------------------------------------
         // Methods
         // -----------------------------------------------------------------
 
-        public Municipality(string Name, int Code, string Type) {
+        public Municipality(string Name, string Code, string Type, string departmentName, string departmentCode) {
             this.Name = Name;
             this.Code = Code;
             this.Type = Type;
+            this.departmentName = departmentName;
+            this.departmentCode = departmentCode;
         }
 
         public string getName() {
             return Name;
         }
 
-        public int getCode() {
+        public string getCode() {
             return Code;
         }
 
         public string getType() {
             return Type;
+        }
+
+        public override string ToString()
+        {
+            string temp = "Name: " + Name + "\n" +
+                "Code: " + Code + "\n" +
+                "Type: " + Type + "\n" +
+                "Department: " + departmentName + "\n" +
+                "Department code: " + departmentCode;
+            return temp;
         }
     }
 }
