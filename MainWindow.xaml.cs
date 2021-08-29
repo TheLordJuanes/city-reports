@@ -40,6 +40,7 @@ namespace Taller2 {
         // Methods
         // -----------------------------------------------------------------
 
+
         public MainWindow() {
             InitializeComponent();
             dane = new Dane();

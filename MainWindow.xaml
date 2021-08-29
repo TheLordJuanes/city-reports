@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Taller2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <DataGrid x:Name="dataGrid"  Margin="16,10,359,63">
+    <Grid Margin="0,0,-36,-6">
+        <DataGrid x:Name="dataGrid"  Margin="16,10,418,63">
 
         </DataGrid>
         <Button x:Name="btnImportar" Height="50" Content="Importar datos" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="btnImportar_Click" Margin="187,0,0,8"/>

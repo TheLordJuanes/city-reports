@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Update="src\ui\MainWindow.xaml">
+    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
